@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 //there is only one syntax for all kinds of cycles in go: onle for
-
 func main(){
 //------------------------------------------
 	for i := 0; i < 8; i++ {
