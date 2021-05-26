@@ -3,20 +3,13 @@ package main
 import "fmt"
 
 //func add (x, y int) int {
-func add (x int, y int) int {
+func add (x int, y int) int { //pay attention: variable, than type
 	result := x + y
 	return result
 }
 
-//not interesting syntax
-func calcadd(x, y int)(res1, res2 int){
-	res1 = x + y
-	res2 = x - y
-	return
-}
-
 //interesting syntax
-func calc(x, y int)(int, int){
+func calc(x, y int)(int, int){ //first types in, second types out
 	res1 := x + y //remembe about syntax like :=
 	res2 := x - y
 	return res1, res2 // here you try to aim in a signature
@@ -38,3 +31,9 @@ func main(){
 	fmt.Println(result1, result2)
 }
 
+//not interesting syntax
+func calcadd(x, y int)(res1, res2 int){
+	res1 = x + y
+	res2 = x - y
+	return
+}
