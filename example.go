@@ -1,3 +1,4 @@
+//just basic function
 package main //need name main
 
 import "fmt"
