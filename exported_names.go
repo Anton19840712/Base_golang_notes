@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main() {//function from a cursive letter
+func main() {//function main from a cursive letter
 	fmt.Println("Antonio")
 }
 
-func Demo(){ //function from a capital letter
+func Demo(){ //function Demo from a capital letter
 }
