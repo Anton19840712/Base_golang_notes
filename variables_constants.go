@@ -15,4 +15,11 @@ func main(){
 	var num2 = 3
 	var result = num0 + num1 + num2
 	fmt.Println(result)
+
+	//WITHOUT VARIABLE TYPE, missing variable type mistake
+	element := "hello"
+	// so := sign - is for dynamic typization, like in a python, no need to declare type, when we use :=
+	//BUT 
+	var element34 = "hello34"
+	fmt.Println(element, element34)	
 }
