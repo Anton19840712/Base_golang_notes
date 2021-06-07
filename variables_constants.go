@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main(){ 
 
@@ -8,7 +10,11 @@ func main(){
 	// num1, num2 = 2, 3
 	// num1 := 34 // the same as var result = 9 --this is my choise
 
-	const num = 9; //you cannot reassign it after like num = 12, for instance
+	const num = 9 //you cannot reassign it after like num = 12, for instance
+	var length, width float64 //declaratio
+	length, width = 1.2, 2.4 //assignment
+
+	fmt.Println(length, width)
 
 	var num0 int // == 0
 	var num1 int = 2
