@@ -52,5 +52,7 @@ fmt.Printf("% X\n", "JKβ") // upper-case with space
 str3 := "hello! golang"
 str4 := "lower CASE I NEED"
 fmt.Println(strings.ToUpper(str3))
+fmt.Println(strings.Title(str3))
 fmt.Println(strings.ToLower(str4))
+
 }
