@@ -9,19 +9,19 @@ package main
 import "fmt"
 
 func greet(c chan string) { //greet function which accepts a channel c of transport data type string
-	//so, here we write not only  f int, or  n string, but we write variable name, 
+	//so, here we write not only  f int, or  n string, but we write variable name,
 	//than variable type and dedicate only one data type to it.
 	fmt.Println("Hello, " + <-c + "!")
 }
 
-func main(){//active goroutine is main goroutine
+func main() { //active goroutine is main goroutine
 	// c := make(chan int)
 	// fmt.Printf("type of `c` is %T'\n", c)
 	// fmt.Printf("value of `c` is %v\n", c)
 	fmt.Println("main()started")
-	c := make(chan string) //chanel creation using make function... interesting
-	go greet(c) // we execute our previously created chan here, using go keyword. 
+	c := make(chan string) //chanel creation using make function... interesting//да, так обозначается функция
+	go greet(c)            // we execute our previously created chan here, using go keyword.
 	// We pass it and go to the c <-"John" and only than to the function greet above
-	c <-"John" // why we use it after? //main goroutine becomes blocke// blocking operation
+	c <- "John" // why we use it after? //main goroutine becomes blocke// blocking operation
 	fmt.Println("main()stopped")
 }
