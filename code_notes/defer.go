@@ -15,3 +15,5 @@ func main() { //need the same as name of the package
 	fmt.Println("End of official cycle and start of deffered execution. That was proposed above.")
 	fmt.Println()
 }
+
+//сначала выполнится логика основного кода, затем отложенного с конца LIFO
